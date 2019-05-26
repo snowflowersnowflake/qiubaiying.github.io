@@ -11,7 +11,7 @@ github_repo: "https://github.com/snowflowersnowflake/snowflowersnowflake.github.
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "曾经我们有梦，有过理想和温柔"
+sidebar-about-description: "曾经我们有梦，有过理想和温柔，如今深夜上网，键盘敲响梦碎的声音"
 sidebar-avatar: /img/y00.jpeg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
