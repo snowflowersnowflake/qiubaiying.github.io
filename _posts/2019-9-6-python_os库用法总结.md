@@ -10,6 +10,7 @@ tags:
     - python 
     - os
 ---
+# python_os常用方法搬运
 |    api    |annotation|
 | ------ | ------ | 
 |os.listdir()   |列出当前目录下的所有文件和文件夹（包括被隐藏的）|
@@ -39,3 +40,12 @@ tags:
 |os.name	|输出字符串指示当前使用平台。win->‘nt’; mac->‘posix’|
 |os.environ	|获取系统环境变量|
 
+```
+#os.sep
+
+import os
+a=os.sep
+print(a) 
+
+output:打印字符 \
+```
