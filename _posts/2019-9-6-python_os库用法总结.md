@@ -43,11 +43,6 @@ tags:
     |os.name	|输出字符串指示当前使用平台。win->‘nt’; mac->‘posix’|
     |os.environ	|获取系统环境变量|
 
-    | 水果        | 价格    |  数量  |
-    | --------   | -----:   | :----: |
-    | 香蕉        | $1      |   5    |
-    | 苹果        | $1      |   6    |
-    | 草莓        | $1      |   7    |
 # example
 
 ### os.listdir()
@@ -174,4 +169,95 @@ ture
 ```
 
 ### os.path.exists()	
-** 判断文件是否存在，相当于之前两个命令的作用总和 **
+**判断文件是否存在，相当于之前两个命令的作用总和**
+
+### os.path.abspath()
+
+```
+import os
+print(os.path.abspath('../Python37'))
+
+```
+
+output:
+```
+C:\Users\user\AppData\Local\Programs\Python\Python37
+```
+
+### os.path.split()
+
+```
+import os
+print(os.path.split('../Python37'))
+
+```
+output:
+```
+('..', 'Python37')
+```
+
+### os.makedir
+
+补充：makedirs可以创建多级目录
+
+```
+import os,sys
+os.makedirs('d:\\books\\book')
+```
+output:
+**D盘出现book\\book 二级目录**
+
+### os.chdir() 
+
+```
+import os, sys
+
+path = "/tmp"
+
+# 查看当前工作目录
+retval = os.getcwd()
+print "当前工作目录为 %s" % retval
+
+# 修改当前工作目录
+os.chdir( path )
+
+# 查看修改后的工作目录
+retval = os.getcwd()
+
+print "目录修改成功 %s" % retval
+```
+
+### os.chmod(path ,mode)
+权限模式汇总：
+```
+stat.S_IXOTH: 其他用户有执行权0o001
+stat.S_IWOTH: 其他用户有写权限0o002
+stat.S_IROTH: 其他用户有读权限0o004
+stat.S_IRWXO: 其他用户有全部权限(权限掩码)0o007
+stat.S_IXGRP: 组用户有执行权限0o010
+stat.S_IWGRP: 组用户有写权限0o020
+stat.S_IRGRP: 组用户有读权限0o040
+stat.S_IRWXG: 组用户有全部权限(权限掩码)0o070
+stat.S_IXUSR: 拥有者具有执行权限0o100
+stat.S_IWUSR: 拥有者具有写权限0o200
+stat.S_IRUSR: 拥有者具有读权限0o400
+stat.S_IRWXU: 拥有者有全部权限(权限掩码)0o700
+stat.S_ISVTX: 目录里文件目录只有拥有者才可删除更改0o1000
+stat.S_ISGID: 执行此文件其进程有效组为文件所在组0o2000
+stat.S_ISUID: 执行此文件其进程有效用户为文件所有者0o4000
+stat.S_IREAD: windows下设为只读
+stat.S_IWRITE: windows下取消只读
+```
+```
+import os, sys, stat
+
+# 假定 /tmp/foo.txt 文件存在，设置文件可以通过用户组执行
+
+os.chmod("/tmp/foo.txt", stat.S_IXGRP)
+
+# 设置文件可以被其他用户写入
+os.chmod("/tmp/foo.txt", stat.S_IWOTH)
+
+print "修改成功!!"
+```
+
