@@ -12,7 +12,7 @@ tags:
 ---
 
 # python_os常用方法搬运
-<br>
+```
 
     |api|annotation|
     | ------ | ------ | 
@@ -43,6 +43,7 @@ tags:
     |os.name	|输出字符串指示当前使用平台。win->‘nt’; mac->‘posix’|
     |os.environ	|获取系统环境变量|
 
+```
 # example
 
 ### os.listdir()
