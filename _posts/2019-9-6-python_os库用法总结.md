@@ -132,7 +132,7 @@ tags:
 
 ## os.listdir()
 
-```
+```python
 
 import os, sys
 
@@ -162,7 +162,7 @@ resume
 ``````
 
 ## os.system()
-```
+```python
 import os
 import subprocess
 #运行shell命令“打开记事本”
@@ -176,19 +176,17 @@ output:
 
 ## os.sep()
 
-```
-
+```python
 import os
 a=os.sep
 print(a) 
-
 ```
 output:
 ```
 \
 ```
 ## os.getcwd()	
-```
+```python
 import os
 print(os.getcwd())
 ```
@@ -209,7 +207,7 @@ os.walk(top[, topdown=True[, onerror=None[, followlinks=False]]])
 * topdown --可选，为 True，则优先遍历 top 目录，否则优先遍历 top 的子目录(默认为开启)。如果 topdown 参数为 True，walk 会遍历top文件夹，与top 文件夹中每一个子目录。
 * onerror -- 可选，需要一个 callable 对象，当 walk 需要异常时，会调用。
 * followlinks -- 可选，如果为 True，则会遍历目录下的快捷方式(linux 下是软连接 symbolic link )实际所指的目录(默认关闭)，如果为 False，则优先遍历 top 的子目录。
-```
+```python
 import os
 for root, dirs, files in os.walk(".", topdown=False):
     for name in files:
@@ -234,7 +232,8 @@ output:
 ./tmp/test.py
 ```
 ## path.isfile()
-```
+```python
+import os
 print(os.path.isfile('test.py'))
 ```
 output:
@@ -243,7 +242,7 @@ true
 ```
 
 ## path.isdir()
-```
+```python
 import os
 print(os.path.isdir('../Python37'))
 
@@ -258,7 +257,7 @@ ture
 
 ## os.path.abspath()
 
-```
+```python
 import os
 print(os.path.abspath('../Python37'))
 
@@ -271,7 +270,7 @@ C:\Users\user\AppData\Local\Programs\Python\Python37
 
 ## os.path.split()
 
-```
+```python
 import os
 print(os.path.split('../Python37'))
 
@@ -285,7 +284,7 @@ output:
 
 补充：makedirs可以创建多级目录
 
-```
+```python
 import os,sys
 os.makedirs('d:\\books\\book')
 ```
@@ -295,7 +294,7 @@ output:
 
 ## os.chdir() 
 
-```
+```python
 import os, sys
 
 path = "/tmp"
@@ -337,7 +336,7 @@ stat.S_IWRITE: windows下取消只读
 
 <br>
 
-```
+```python
 import os, sys, stat
 
 #假定 /tmp/foo.txt 文件存在，设置文件可以通过用户组执行
@@ -349,12 +348,12 @@ os.chmod("/tmp/foo.txt", stat.S_IWOTH)
 
 print "修改成功!!"
 ```
-<br>
 
 ## os.name
 
 **当前只注册了3个值：分别是posix , nt , java， 对应linux/windows/java虚拟机**
-```
+
+```python
 import os,sys
 print(os.name)
 ```
