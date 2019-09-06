@@ -14,7 +14,7 @@ tags:
 # python_os常用方法搬运
 <br>
 
- api | annotation 
+api | annotation 
  - | - |
 os.listdir()   |列出当前目录下的所有文件和文件夹（包括被隐藏的）
 os.system()	|运行shell命令；可将 指令 以 字符串 / 字符串拼接 的形式喂进去
