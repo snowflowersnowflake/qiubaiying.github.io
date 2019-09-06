@@ -15,7 +15,7 @@ tags:
 <br>
 
 api | annotation 
- - | - |
+- | - |
 os.listdir()   |列出当前目录下的所有文件和文件夹（包括被隐藏的）
 os.system()	|运行shell命令；可将 指令 以 字符串 / 字符串拼接 的形式喂进去
 os.sep()	|更改操作系统中的路径分隔符|
