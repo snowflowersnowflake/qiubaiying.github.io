@@ -118,8 +118,8 @@ tags:
 					<td>输出用于分割文件路径的字符串</td>
 				</tr>
 				<tr>
-					<td><a href="http://os.name" rel="nofollow" data-token="cd3a173c3dbf84d87c7f667acaaaf522">os.name</a></td>
-					<td>输出字符串指示当前使用平台。win-&gt;‘nt’; mac-&gt;‘posix’</td>
+					<td>os.osname</td>
+					<td>输出字符串指示当前使用平台。</td>
 				</tr>
 				<tr>
 					<td>os.environ</td>
