@@ -145,7 +145,9 @@ for file in dirs:
    print file
 
 ```
+
 output:
+
 ```
 #得到打印的目录结果
 test.htm
@@ -162,6 +164,7 @@ resume
 ``````
 
 ## os.system()
+
 ```python
 import os
 import subprocess
@@ -170,9 +173,9 @@ os.system('notepad')
 
 ```
 output:
-```
-#系统打开记事本
-```
+
+**系统打开记事本**
+
 
 ## os.sep()
 
@@ -185,7 +188,9 @@ output:
 ```
 \
 ```
+
 ## os.getcwd()	
+
 ```python
 import os
 print(os.getcwd())
@@ -196,6 +201,7 @@ C:\Users\user\AppData\Local\Programs\Python\Python37
 ```
 
 ## os.walk()
+
 os.walk() 方法是一个简单易用的文件、目录遍历器，可以帮助我们高效的处理文件、目录方面的事情。
 
 os.walk(top[, topdown=True[, onerror=None[, followlinks=False]]])
@@ -207,6 +213,7 @@ os.walk(top[, topdown=True[, onerror=None[, followlinks=False]]])
 * topdown --可选，为 True，则优先遍历 top 目录，否则优先遍历 top 的子目录(默认为开启)。如果 topdown 参数为 True，walk 会遍历top文件夹，与top 文件夹中每一个子目录。
 * onerror -- 可选，需要一个 callable 对象，当 walk 需要异常时，会调用。
 * followlinks -- 可选，如果为 True，则会遍历目录下的快捷方式(linux 下是软连接 symbolic link )实际所指的目录(默认关闭)，如果为 False，则优先遍历 top 的子目录。
+
 ```python
 import os
 for root, dirs, files in os.walk(".", topdown=False):
@@ -216,7 +223,9 @@ for root, dirs, files in os.walk(".", topdown=False):
         print(os.path.join(root, name))
 
 ```
+
 output:
+
 ```
 ./.bash_logout
 ./amrood.tar.gz
@@ -232,6 +241,7 @@ output:
 ./tmp/test.py
 ```
 ## path.isfile()
+
 ```python
 import os
 print(os.path.isfile('test.py'))
@@ -242,6 +252,7 @@ true
 ```
 
 ## path.isdir()
+
 ```python
 import os
 print(os.path.isdir('../Python37'))
@@ -313,7 +324,9 @@ print "目录修改成功 %s" % retval
 ```
 
 ## os.chmod(path ,mode)
+
 权限模式汇总：
+
 ```
 stat.S_IXOTH: 其他用户有执行权0o001
 stat.S_IWOTH: 其他用户有写权限0o002
