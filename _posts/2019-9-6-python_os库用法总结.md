@@ -12,8 +12,8 @@ tags:
 ---
 
 # python_os常用方法搬运
-
-|    api    |annotation|
+<br>
+|api|annotation|
 | ------ | ------ | 
 |os.listdir()   |列出当前目录下的所有文件和文件夹（包括被隐藏的）|
 |os.system()	|运行shell命令；可将 指令 以 字符串 / 字符串拼接 的形式喂进去|
@@ -42,6 +42,11 @@ tags:
 |os.name	|输出字符串指示当前使用平台。win->‘nt’; mac->‘posix’|
 |os.environ	|获取系统环境变量|
 
+    | 水果        | 价格    |  数量  |
+    | --------   | -----:   | :----: |
+    | 香蕉        | $1      |   5    |
+    | 苹果        | $1      |   6    |
+    | 草莓        | $1      |   7    |
 # example
 
 ### os.listdir()
@@ -111,7 +116,7 @@ output:
 C:\Users\user\AppData\Local\Programs\Python\Python37
 ```
 
-### os.walk
+### os.walk()
 os.walk() 方法是一个简单易用的文件、目录遍历器，可以帮助我们高效的处理文件、目录方面的事情。
 
 os.walk(top[, topdown=True[, onerror=None[, followlinks=False]]])
@@ -147,4 +152,23 @@ output:
 ./tmp
 ./tmp/test.py
 ```
-### os.walk
+### path.isfile()
+```
+print(os.path.isfile('test.py'))
+```
+output:
+```
+true
+```
+
+### path.isdir()
+```
+import os
+print(os.path.isdir('../Python37'))
+
+```
+output:
+```
+ture
+```
+
