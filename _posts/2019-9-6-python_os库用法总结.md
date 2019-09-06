@@ -47,5 +47,8 @@ import os
 a=os.sep
 print(a) 
 
-output:打印字符 \
+```
+output
+```
+\
 ```
