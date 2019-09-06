@@ -39,16 +39,107 @@ tags:
 |os.pathsep	|输出用于分割文件路径的字符串|
 |os.name	|输出字符串指示当前使用平台。win->‘nt’; mac->‘posix’|
 |os.environ	|获取系统环境变量|
+# example
+
+### os.listdir()
 
 ```
-#os.sep
+
+import os, sys
+
+# 打开文件
+path = "/var/www/html/"
+dirs = os.listdir( path )
+
+# 输出所有文件和文件夹
+for file in dirs:
+   print file
+
+```
+output:
+```
+#得到打印的目录结果
+test.htm
+stamp
+faq.htm
+_vti_txt
+robots.txt
+itemlisting
+resumelisting
+writing_effective_resume.htm
+advertisebusiness.htm
+papers
+resume
+``````
+
+### os.system()
+```
+import os
+import subprocess
+#运行shell命令“打开记事本”
+os.system('notepad')
+
+```
+output:
+```
+#系统打开记事本
+```
+
+### os.sep()
+
+```
 
 import os
 a=os.sep
 print(a) 
 
 ```
-output
+output:
 ```
 \
+```
+### os.getcwd()	
+```
+import os
+print(os.getcwd())
+```
+output:
+```
+C:\Users\user\AppData\Local\Programs\Python\Python37
+```
+
+### os.walk
+os.walk() 方法是一个简单易用的文件、目录遍历器，可以帮助我们高效的处理文件、目录方面的事情。
+os.walk(top[, topdown=True[, onerror=None[, followlinks=False]]])
+
+*top -- 是你所要遍历的目录的地址, 返回的是一个三元组(root,dirs,files)。
+*root 所指的是当前正在遍历的这个文件夹的本身的地址
+*dirs 是一个 list ，内容是该文件夹中所有的目录的名字(不包括子目录)
+*files 同样是 list , 内容是该文件夹中所有的文件(不包括子目录)
+*topdown --可选，为 True，则优先遍历 top 目录，否则优先遍历 top 的子目录(默认为开启)。如果 topdown 参数为 True，walk 会遍历top文件夹，与top 文件夹中每一个子目录。
+*onerror -- 可选，需要一个 callable 对象，当 walk 需要异常时，会调用。
+*followlinks -- 可选，如果为 True，则会遍历目录下的快捷方式(linux 下是软连接 symbolic link )实际所指的目录(默认关闭)，如果为 False，则优先遍历 top 的子目录。
+```
+import os
+for root, dirs, files in os.walk(".", topdown=False):
+    for name in files:
+        print(os.path.join(root, name))
+    for name in dirs:
+        print(os.path.join(root, name))
+
+```
+output:
+```
+./.bash_logout
+./amrood.tar.gz
+./.emacs
+./httpd.conf
+./www.tar.gz
+./mysql.tar.gz
+./test.py
+./.bashrc
+./.bash_history
+./.bash_profile
+./tmp
+./tmp/test.py
 ```
