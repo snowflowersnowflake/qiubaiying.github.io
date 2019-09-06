@@ -290,6 +290,7 @@ import os,sys
 os.makedirs('d:\\books\\book')
 ```
 output:
+
 **D盘出现book\\book 二级目录**
 
 ## os.chdir() 
@@ -299,14 +300,14 @@ import os, sys
 
 path = "/tmp"
 
-# 查看当前工作目录
+#查看当前工作目录
 retval = os.getcwd()
 print "当前工作目录为 %s" % retval
 
-# 修改当前工作目录
+#修改当前工作目录
 os.chdir( path )
 
-# 查看修改后的工作目录
+#查看修改后的工作目录
 retval = os.getcwd()
 
 print "目录修改成功 %s" % retval
@@ -339,11 +340,11 @@ stat.S_IWRITE: windows下取消只读
 ```
 import os, sys, stat
 
-# 假定 /tmp/foo.txt 文件存在，设置文件可以通过用户组执行
+#假定 /tmp/foo.txt 文件存在，设置文件可以通过用户组执行
 
 os.chmod("/tmp/foo.txt", stat.S_IXGRP)
 
-# 设置文件可以被其他用户写入
+#设置文件可以被其他用户写入
 os.chmod("/tmp/foo.txt", stat.S_IWOTH)
 
 print "修改成功!!"
