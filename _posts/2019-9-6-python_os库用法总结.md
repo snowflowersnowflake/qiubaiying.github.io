@@ -349,3 +349,17 @@ os.chmod("/tmp/foo.txt", stat.S_IWOTH)
 print "修改成功!!"
 ```
 <br>
+
+### os.name
+
+**当前只注册了3个值：分别是posix , nt , java， 对应linux/windows/java虚拟机**
+```
+import os,sys
+print(os.name)
+```
+output:(笔者使用的Windows)
+```
+nt
+```
+
+<br>
