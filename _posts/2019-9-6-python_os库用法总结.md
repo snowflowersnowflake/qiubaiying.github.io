@@ -130,7 +130,7 @@ tags:
 		
 # example
 
-### os.listdir()
+## os.listdir()
 
 ```
 
@@ -161,7 +161,7 @@ papers
 resume
 ``````
 
-### os.system()
+## os.system()
 ```
 import os
 import subprocess
@@ -174,7 +174,7 @@ output:
 #系统打开记事本
 ```
 
-### os.sep()
+## os.sep()
 
 ```
 
@@ -187,7 +187,7 @@ output:
 ```
 \
 ```
-### os.getcwd()	
+## os.getcwd()	
 ```
 import os
 print(os.getcwd())
@@ -197,7 +197,7 @@ output:
 C:\Users\user\AppData\Local\Programs\Python\Python37
 ```
 
-### os.walk()
+## os.walk()
 os.walk() 方法是一个简单易用的文件、目录遍历器，可以帮助我们高效的处理文件、目录方面的事情。
 
 os.walk(top[, topdown=True[, onerror=None[, followlinks=False]]])
@@ -233,7 +233,7 @@ output:
 ./tmp
 ./tmp/test.py
 ```
-### path.isfile()
+## path.isfile()
 ```
 print(os.path.isfile('test.py'))
 ```
@@ -242,7 +242,7 @@ output:
 true
 ```
 
-### path.isdir()
+## path.isdir()
 ```
 import os
 print(os.path.isdir('../Python37'))
@@ -253,10 +253,10 @@ output:
 ture
 ```
 
-### os.path.exists()	
+## os.path.exists()	
 **判断文件是否存在，相当于之前两个命令的作用总和**
 
-### os.path.abspath()
+## os.path.abspath()
 
 ```
 import os
@@ -269,7 +269,7 @@ output:
 C:\Users\user\AppData\Local\Programs\Python\Python37
 ```
 
-### os.path.split()
+## os.path.split()
 
 ```
 import os
@@ -281,7 +281,7 @@ output:
 ('..', 'Python37')
 ```
 
-### os.makedir
+## os.makedir
 
 补充：makedirs可以创建多级目录
 
@@ -292,7 +292,7 @@ os.makedirs('d:\\books\\book')
 output:
 **D盘出现book\\book 二级目录**
 
-### os.chdir() 
+## os.chdir() 
 
 ```
 import os, sys
@@ -312,7 +312,7 @@ retval = os.getcwd()
 print "目录修改成功 %s" % retval
 ```
 
-### os.chmod(path ,mode)
+## os.chmod(path ,mode)
 权限模式汇总：
 ```
 stat.S_IXOTH: 其他用户有执行权0o001
@@ -350,7 +350,7 @@ print "修改成功!!"
 ```
 <br>
 
-### os.name
+## os.name
 
 **当前只注册了3个值：分别是posix , nt , java， 对应linux/windows/java虚拟机**
 ```
