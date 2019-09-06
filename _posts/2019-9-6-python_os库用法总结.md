@@ -333,6 +333,9 @@ stat.S_ISUID: 执行此文件其进程有效用户为文件所有者0o4000
 stat.S_IREAD: windows下设为只读
 stat.S_IWRITE: windows下取消只读
 ```
+
+<br>
+
 ```
 import os, sys, stat
 
