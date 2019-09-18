@@ -4,7 +4,7 @@ title:      logistic进行分类实例
 subtitle:   #学校作业w
 date:       2019-9-18
 author:     y00
-header-img: img/笨9.jpg
+header-img: img/=-=.jpg
 catalog: true
 tags:
     - python
