@@ -2,7 +2,7 @@
 layout:     post
 title:      py_openCV练习题
 subtitle:   #图片轮廓框选
-date:       2019-9-22
+date:       2019-9-27
 author:     y00
 header-img: img/asuna.jpg
 catalog: true
