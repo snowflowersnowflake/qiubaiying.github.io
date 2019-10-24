@@ -1,4 +1,4 @@
-# 十分感谢BY的开源模板
+# 十分感谢HUX的开源模板
 # 这里是我的博客，展示数据分析，机器学习方面的笔记内容
 
 ![](https://raw.githubusercontent.com/qiubaiying/qiubaiying.github.io/master/img/readme-home.png)
