@@ -1,5 +1,9 @@
-# 十分感谢HUX的开源主题
-# 这里是我的博客，展示数据分析，机器学习方面的笔记内容
+# 十分感谢HUX的开源主题,模板来自BY
+* 这里是我的博客，展示~~数据分析，机器学习方面~~的笔记内容
+* 就算失败过无数次
+* 能走到多远是极限
+* 能改变多少人的生活
+* 我准备用多少时间，来回答
 
 ![](https://raw.githubusercontent.com/qiubaiying/qiubaiying.github.io/master/img/readme-home.png)
 
